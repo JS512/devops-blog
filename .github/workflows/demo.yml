@@ -25,7 +25,7 @@ jobs:
       run: export GO111MODULE=on
       
     - name: install hugo
-      run: go install https://GitHub.com/gohugoio/hugo@v0.54.0
+      run: go install https://GitHub.com/gohugoio/hugo@v0.109.0
       
     - name: make directory
       run: mkdir -p themes/beautifulhugo && git clone https://GitHub.com/halogenica/beautifulhugo.git themes/beautifulhugo
