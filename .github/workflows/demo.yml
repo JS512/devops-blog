@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Setup Go 1.11.x
+    - name: Setup Go 1.19.x
       uses: actions/setup-go@v5
       with:
         # Semantic version range syntax or exact version of Go
