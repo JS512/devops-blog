@@ -20,6 +20,10 @@ jobs:
       with:
         # Semantic version range syntax or exact version of Go
         go-version: '1.11.x'
+        
+    - name: user for hugo
+      run: export GO111MODULE=on
+      
     - name: install hugo
       run: go get https://GitHub.com/gohugoio/hugo@v0.54.0
       
