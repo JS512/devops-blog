@@ -22,10 +22,7 @@ jobs:
         go-version: '1.11.x'
         
     - name: user for hugo
-      run: export GO111MODULE=on
-      
-    - name: install hugo
-      run: go install https://GitHub.com/gohugoio/hugo@v0.54.0
+      run: export GO111MODULE=on | go mod init DevOpsGo | go mod download https://GitHub.com/gohugoio/hugo@v0.54.0
       
     - name: make directory
       run: mkdir -p themes/beautifulhugo && git clone https://GitHub.com/halogenica/beautifulhugo.git themes/beautifulhugo
