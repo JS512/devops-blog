@@ -19,13 +19,13 @@ jobs:
       uses: actions/setup-go@v5
       with:
         # Semantic version range syntax or exact version of Go
-        go-version: '1.19.x'
+        go-version: '1.25.x'
         
     - name: user for hugo
       run: export GO111MODULE=on
       
     - name: install hugo
-      run: go install https://GitHub.com/gohugoio/hugo@v0.109.0
+      run: go install https://GitHub.com/gohugoio/hugo@latest
       
     - name: make directory
       run: mkdir -p themes/beautifulhugo && git clone https://GitHub.com/halogenica/beautifulhugo.git themes/beautifulhugo
